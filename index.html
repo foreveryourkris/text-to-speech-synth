@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="panel">
+            <h1 class="title">Text to Speech</h1>
+
+            <div class="options-block">
+                <option class="option-title" value="">Select a voice :</option>
+                <select class="voice-options" name="voice" id="voices"></select>
+            </div>
+
+            <div class="rate-and-pitch-block block">
+                <div class="inner-block">
+                    <label class="rate range-toggles" for="rate">Rate :</label>
+                    <input type="range" name="rate" min="0" max="3" value="1" step="0.1">
+                </div>
+
+                <div class="inner-block">
+                    <label class="pitch range-toggles" for="pitch">Pitch :</label>
+                    <input type="range" name="pitch" min="0" max="2" step="0.1">
+                </div>
+
+            </div>
+
+            <div class="text-area">
+                <textarea class="user-text-input" name="text">Hi there!</textarea>
+            </div>
+
+            <div class="btns-block">
+                <button class="stp-btn btn" id="stop">Stop</button>
+                <button class="strt-btn btn" id="speak">Speak</button>
+            </div>
+        </>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
